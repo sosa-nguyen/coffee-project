@@ -5,14 +5,15 @@
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="column col-12"><h1 id="heading">Coffee!</h1></div>
+        <div class="column col-12" id="topbar"><h1 id="heading">Wake up to a whole lot of Flavors!</h1></div>
     </div>
     <div class="row">
-        <div class="column col-6">
+        <div id= "leftbar" class="column col-6">
             <table>
                 <thead>
                 <tr>
@@ -24,18 +25,19 @@
                 <tbody id="coffees"></tbody>
             </table>
         </div>
-        <div class="column col-6">
+        <div id= "rightbar" class="column col-6">
             <form>
-                <h3>Roast</h3>
+                <h2>Roast</h2>
                 <label for="roast-selection"></label>
                 <select id="roast-selection">
-                    <!--            <option>All</option>-->
                     <option>All</option>
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
                 </select>
-                <h3>Coffee Name</h3>
+                <br>
+                <br>
+                <h2>Coffee Name</h2>
                 <input class="search" type="search" id="myInput" placeholder="Search">
 
                 <input id="submit" type="submit" />
