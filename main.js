@@ -46,7 +46,11 @@ function updateCoffees(e) {
 
 function inputCoffee(e) {
     e.preventDefault();
-    var moreCoffee = coffees;
+    var newCoffee = {};
+    newCoffee.name = userInput;
+    newCoffee.roast = userRoastSelection;
+    coffees.push(newCoffee);
+    tbody.innerHTML = renderCoffees(coffees);
 }
 
 
@@ -71,7 +75,11 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+
 var myInput = document.querySelector("#myInput");
+
+var userInput = document.querySelector('#userInput');
+var userRoastSelection = document.querySelector('#user-roast-selection');
 var userCoffee = document.querySelector('#userSubmit');
 
 tbody.innerHTML = renderCoffees(coffees);
@@ -79,3 +87,17 @@ tbody.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
 myInput.addEventListener('keyup', filterCoffees);
 userCoffee.addEventListener('click', inputCoffee);
+
+// <form>
+// <h3>Roast</h3>
+// <label for="user-roast-selection"></label>
+//     <select id="user-roast-selection">
+//      <option>light</option>
+//      <option>medium</option>
+//      <option>dark</option>
+//     </select>
+//     <h3>Coffee Name</h3>
+// <input type="text" id="userInput" placeholder="">
+//
+//     <input id="userSubmit" type="submit" />
+//     </form>
