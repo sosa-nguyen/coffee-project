@@ -47,8 +47,9 @@ function updateCoffees(e) {
 function inputCoffee(e) {
     e.preventDefault();
     var newCoffee = {};
-    newCoffee.name = userInput;
-    newCoffee.roast = userRoastSelection;
+    newCoffee.id = coffees.length+1;
+    newCoffee.name = userInput.value;
+    newCoffee.roast = userRoastSelection.value;
     coffees.push(newCoffee);
     tbody.innerHTML = renderCoffees(coffees);
 }
