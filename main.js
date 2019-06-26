@@ -87,17 +87,3 @@ tbody.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
 myInput.addEventListener('keyup', filterCoffees);
 userCoffee.addEventListener('click', inputCoffee);
-
-// <form>
-// <h3>Roast</h3>
-// <label for="user-roast-selection"></label>
-//     <select id="user-roast-selection">
-//      <option>light</option>
-//      <option>medium</option>
-//      <option>dark</option>
-//     </select>
-//     <h3>Coffee Name</h3>
-// <input type="text" id="userInput" placeholder="">
-//
-//     <input id="userSubmit" type="submit" />
-//     </form>
