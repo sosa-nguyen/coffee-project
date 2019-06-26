@@ -23,6 +23,8 @@ td, th {
 }
 #leftbar{
     height: 700px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #9D6C56;
 }
 #rightbar{
     background-color: #DFD7CD;
