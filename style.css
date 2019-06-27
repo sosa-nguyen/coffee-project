@@ -17,6 +17,7 @@ td, th {
 }
 #topbar {
     background-image: url("coffee.jpg");
+    background-size: cover;
     height: 150px;
     text-align: right;
     color: #9D6C56;
@@ -25,7 +26,7 @@ td, th {
 #leftbar{
     height: 700px;
     font-family: 'Josefin Sans', sans-serif;
-    color: #9D6C56;
+    color: #3F1003;
     font-size: 12px;
     background-color: white;
     background-image: url("coffee-bear2.jpg");
@@ -42,8 +43,7 @@ td, th {
 }
 span{
     font-size: 18px;
-    opacity: .6;
-    color: grey;
+    color: dimgrey;
 }
 hr{
     border-top: 1px dashed white;
