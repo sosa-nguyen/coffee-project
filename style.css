@@ -65,3 +65,19 @@ tbody#coffees {
     height: 100px;
     width: 100px;
 }
+
+#roast-selection {
+    width: 99%;
+}
+
+#user-roast-selection {
+    width: 99%;
+}
+
+.search {
+    width: 100%;
+}
+
+.submit {
+    width: 100%;
+}
