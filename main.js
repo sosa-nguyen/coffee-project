@@ -48,10 +48,15 @@ function updateCoffees(e) {
 function inputCoffee(e) {
     e.preventDefault();
     var newCoffee = {};
-    newCoffee.id = coffees.length+1;
     newCoffee.name = userInput.value;
     newCoffee.roast = userRoastSelection.value;
-    coffees.push(newCoffee);
+    if (newCoffee.roast === 'light'){
+        coffees.unshift(newCoffee);
+    } else if (newCoffee.roast === 'dark'){
+        coffees.push(newCoffee);
+    } else if (newCoffee.roast === 'medium'){
+        coffees.splice(4, 0, newCoffee)
+    }
     tbody.innerHTML = renderCoffees(coffees);
 }
 
