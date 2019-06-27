@@ -1,10 +1,9 @@
-body{
+body {
     background-color: #501E06;
     background-image: url("beans.jpg");
     background-size: cover;
 }
-.container{
-}
+
 table {
     border-collapse: collapse;
     margin: 15px 0;
@@ -15,40 +14,70 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+
+.n-color {
+    text-shadow: 2px 2px #3F1003;
+    color: #DAC39D !important;
+}
+
 #topbar {
     background-image: url("coffee.jpg");
     background-size: cover;
     height: 150px;
     text-align: right;
     color: #9D6C56;
+    text-shadow: 1px 1px #3F1003;
     font-family: 'Cookie', cursive;
 }
-#leftbar{
+
+#leftbar {
     height: 700px;
     font-family: 'Josefin Sans', sans-serif;
     color: #3F1003;
+    text-shadow: 1px 1px #3F1003;
     font-size: 12px;
     background-color: white;
     background-image: url("coffee-bear2.jpg");
     background-size: cover;
 }
 
-#rightbar{
+#rightbar {
     background-color: #DFD7CD;
+    text-shadow: 1px 1px #3F1003;
     height: 700px;
     font-family: 'Cookie', cursive;
 }
-#bottombar{
+
+#bottombar {
     height: 150%;
 }
-span{
+
+span {
     font-size: 18px;
     color: dimgrey;
 }
-hr{
+
+hr {
     border-top: 1px dashed white;
 }
-tbody#coffees{
+
+tbody#coffees {
     height: 100px;
     width: 100px;
+}
+
+#roast-selection {
+    width: 99%;
+}
+
+#user-roast-selection {
+    width: 99%;
+}
+
+.search {
+    width: 100%;
+}
+
+.submit {
+    width: 100%;
 }

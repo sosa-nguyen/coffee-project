@@ -2,16 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Coffee Shop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <div class="container">
     <div class="row">
-        <div class="column col-12" id="topbar"><h1 id="heading">Wake up to a whole lot of Flavors!</h1></div>
+        <div class="column col-12" id="topbar">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="font-size: 40px;">
+                    <a class="navbar-brand" href="#"><img class="shadow-lg rounded" width="85" height="85" src="logo.jpg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link n-color" href="#">Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link n-color active" href="#">Menu</a>
+                            <a class="nav-item nav-link n-color" href="#">Location</a>
+                            <a class="nav-item nav-link n-color" href="#">About</a>
+                            <a class="nav-item nav-link n-color" href="#">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+        <h1 id="heading">Wake up to a whole lot of Flavors!</h1>
+        </div>
     </div>
+
     <div class="row">
         <div id= "leftbar" class="column col-6">
                     <div class="row pt-4" id="coffees"></div>
@@ -35,7 +56,7 @@
                 <h2>Coffee Name</h2>
                 <input class="search" type="search" id="myInput" placeholder="Search">
 
-                <input id="submit" type="submit" />
+                <input class="submit btn btn-secondary" id="submit" type="submit" value="Submit"/>
             </form>
             <hr>
             <form>
@@ -54,9 +75,9 @@
                 <br>
                 <br>
                 <h3>Coffee Name</h3>
-                <input type="text" id="userInput" placeholder="Suggest">
+                <input class="search" type="text" id="userInput" placeholder="Suggest">
 
-                <input id="userSubmit" type="submit" />
+                <input class="submit btn btn-secondary" id="userSubmit" type="submit" value="Submit"/>
             </form>
         </div>
     </div>
