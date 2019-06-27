@@ -24,10 +24,10 @@ td, th {
     background-image: url("coffee.jpg");
     background-size: cover;
     height: 150px;
-    text-align: right;
     color: #9D6C56;
     text-shadow: 1px 1px #3F1003;
     font-family: 'Cookie', cursive;
+    text-align: right;
 }
 
 #leftbar {
@@ -38,7 +38,8 @@ td, th {
     font-size: 12px;
     background-color: white;
     background-image: url("coffee-bear2.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 #rightbar {
@@ -46,6 +47,7 @@ td, th {
     text-shadow: 1px 1px #3F1003;
     height: 700px;
     font-family: 'Cookie', cursive;
+    background-image: url("coffee_10.jpg");
 }
 
 #bottombar {
