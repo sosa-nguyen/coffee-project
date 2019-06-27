@@ -17,6 +17,7 @@ td, th {
 }
 #topbar {
     background-image: url("coffee.jpg");
+    background-size: cover;
     height: 150px;
     text-align: right;
     color: #9D6C56;
