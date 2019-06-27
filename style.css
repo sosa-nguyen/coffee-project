@@ -1,6 +1,7 @@
 body{
     background-color: #501E06;
-
+    background-image: url("beans.jpg");
+    background-size: cover;
 }
 .container{
 }
@@ -8,7 +9,6 @@ table {
     border-collapse: collapse;
     margin: 15px 0;
     table-layout:fixed;
-}
 }
 
 td, th {
@@ -28,7 +28,10 @@ td, th {
     color: #9D6C56;
     font-size: 12px;
     background-color: white;
+    background-image: url("coffee-bear2.jpg");
+    background-size: cover;
 }
+
 #rightbar{
     background-color: #DFD7CD;
     height: 700px;
@@ -44,4 +47,8 @@ span{
 }
 hr{
     border-top: 1px dashed white;
+}
+tbody#coffees{
+    height: 100px;
+    width: 100px;
 }
