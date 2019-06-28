@@ -2,9 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Footer Testing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Josefin+Sans&display=swap" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+
+        body {
+            background-color: #501E06;
+        }
+        footer {
+            height: 100px; width: 100%; font-family: 'Josefin Sans', sans-serif; font-size: 18px; color: #DAC39D;
+        }
+        .container {
+            margin: 0 auto;
+        }
+        a {
+            color: #DAC39D;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #DAC39D;
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            padding: 5px 0;
+        }
+        li img {
+            height: 35px;
+            width: auto;
+        }
+        #map {
+            height: 250px;
+            width: 100%;
+        }
+
+    </style>
+
 </head>
 <body>
-$END$
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 text-left">
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">maybe something else??</a></li>
+                </ul>
+            </div>
+            <div class="col-4 text-center">
+                <ul>
+                    <li>Hours</li>
+                    <li>Mon-Fri:</li>
+                    <li>Sat & Sun:</li>
+                    <li>
+                        <a href="#"><img src="facebook2.png" alt="facebook"></a>
+                        <a href="#"><img src="twitter.png" alt="twitter"></a>
+                        <a href="#"><img src="instagram.png" alt="instagram"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4" id="map"></div>
+        </div>
+    </div>
+
+</footer>
+
+
+<!--BootStrap Script-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="keys.js"></script>
+<script src="mapbox-geocoder-utils.js"></script>
+
+<!-- Map Script-->
+<script>
+    mapboxgl.accessToken = mapToken;
+
+    // var sanAntonio;
+        var mapOptions = {
+            container: 'map',
+            style: 'mapbox://styles/mapbox/outdoors-v10',
+            zoom: 15,
+            center: [-98.489313, 29.426409]
+    };
+
+        var map = new mapboxgl.Map(mapOptions);
+
+    var marker = new mapboxgl.Marker({color: "#DAC39D"})
+        .setLngLat([-98.489313, 29.426409])
+        .addTo(map);
+
+</script>
 </body>
 </html>
