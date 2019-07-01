@@ -147,3 +147,14 @@ li img {
     height: 250px;
     width: 100%;
 }
+#content3 {
+    background: #DAC39D;
+}
+#topsellers{
+    text-align: center;
+}
+.descriptions{
+    background: white;
+    margin: 10px;
+    box-shadow: 10px 10px grey;
+}
