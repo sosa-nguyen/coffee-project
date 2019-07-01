@@ -1,0 +1,109 @@
+body {
+    background-color: white;
+    background-image: url("cofeebg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 15px 0;
+    table-layout:fixed;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.n-color {
+    text-shadow: 2px 2px #3F1003;
+    color: white !important;
+}
+
+#topbar {
+    background: black;
+    height: 100px;
+    color: white;
+    text-shadow: 1px 1px #3F1003;
+    font-family: 'Cookie', cursive;
+    text-align: right;
+    padding-left: 80px;
+}
+
+#centerbar {
+    height: 700px;
+    font-family: 'Cookie', cursive;
+    color: #E6C497;
+    text-shadow: 1px 1px #3F1003;
+    font-size: 12px;
+    background-image: url("board.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+#rightbar {
+    text-shadow: 1px 1px chocolate;
+    height: 700px;
+    font-family: 'Cookie', cursive;
+    color: white;
+    background: black;
+}
+#leftbar {
+    font-family: 'Handlee', cursive;
+    font-size: 65px;
+    background: black;
+    color: white;
+    background: url("leftbar3.jpg");
+    background-size: cover;
+
+}
+#bottombar {
+    height: 150%;
+}
+
+span {
+    font-size: 18px;
+    color: #E1DCD7;
+}
+
+hr {
+    border-top: 1px dashed white;
+}
+
+tbody#coffees {
+    height: 100px;
+    width: 100px;
+}
+
+#roast-selection {
+    width: 99%;
+}
+
+#user-roast-selection {
+    width: 99%;
+}
+
+.search {
+    width: 100%;
+}
+
+.submit {
+    width: 100%;
+}
+#buycup {
+    font-size: 60px;
+    color: #53343B;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#content{
+    height: 600px;
+    padding-left: 80px;
+}
+#content2{
+    background: white;
+}
+

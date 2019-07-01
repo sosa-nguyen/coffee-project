@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Déjà Brew ☕ </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="row">
+        <div class="column col-12" id="topbar">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent navbar-fixed-top" style="font-size: 40px;">
+                    <a class="navbar-brand" href="#"><img class="shadow-lg rounded" width="85" height="85" src="logo.jpg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link n-color" href="#">Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link n-color active" href="#">Menu</a>
+                            <a class="nav-item nav-link n-color" href="#">Location</a>
+                            <a class="nav-item nav-link n-color" href="#">About</a>
+                            <a class="nav-item nav-link n-color" href="#">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+    </div>
+    <div  class="column col-12" id="content">
+    <p id="buycup">Design your <br> own Cup!</p>
+        <br>
+        <br>
+        <a href="#content2" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Build it!</a>
+    </div>
+    <div class="row" id="content2">
+        <div id="leftbar" class="column col-4">
+        </div>
+        <div id= "centerbar" class="column col-4">
+                    <div class="row pt-4" id="coffees"></div>
+        </div>
+        <div id= "rightbar" class="column col-4">
+            <br>
+            <h1 class="text-center">Pick a flavor ☕</h1>
+            <form>
+                <br>
+                <br>
+                <h2>Roast</h2>
+                <label for="roast-selection"></label>
+                <select id="roast-selection">
+                    <option>All</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <br>
+                <br>
+                <h2>Coffee Name</h2>
+                <input class="search" type="search" id="myInput" placeholder="Search">
+
+                <input class="submit btn btn-secondary" id="submit" type="submit" value="Submit"/>
+            </form>
+            <hr>
+            <form>
+                <br>
+                <h1 class="text-center">Suggestions ☕</h1>
+                <br>
+                <br>
+                <h3>Roast</h3>
+                <label for="user-roast-selection"></label>
+                <select id="user-roast-selection">
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <br>
+                <br>
+                <h3>Coffee Name</h3>
+                <input class="search" type="text" id="userInput" placeholder="Suggest">
+
+                <input class="submit btn btn-secondary" id="userSubmit" type="submit" value="Submit"/>
+            </form>
+        </div>
+    </div>
+
+    <script src="main2.js"></script>
+    <!--Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+</body>
+</html>
