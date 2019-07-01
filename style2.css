@@ -148,7 +148,7 @@ li img {
     width: 100%;
 }
 #content3 {
-    background: #DAC39D;
+    background: url("wood.jpg");
 }
 #topsellers{
     text-align: center;
@@ -156,5 +156,9 @@ li img {
 .descriptions{
     background: white;
     margin: 10px;
-    box-shadow: 10px 10px grey;
+    box-shadow: 10px 10px #F5EFEE;
+    border-radius: 25px;
+    padding: 20px;
+    width: 200px;
+    height: 250px;
 }
