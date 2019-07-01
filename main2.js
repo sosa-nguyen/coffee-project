@@ -2,10 +2,8 @@
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee col-6 py-2">';
-    // html += '<td>' + coffee.id + '</td>';
     html += '<h3>' + coffee.name + '<span>' + ' ' + ' ' + coffee.roast +
         '</span>' + '</h3>';
-    // html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
@@ -28,7 +26,7 @@ function filterCoffees(e) {
             filteredCoffees.push(coffee);
         }
     });
-    tbody.innerHTML = renderCoffees(filteredCoffees)
+    bfbody.innerHTML = renderCoffees(filteredCoffees)
 }
 
 function updateCoffees(e) {
@@ -42,7 +40,7 @@ function updateCoffees(e) {
             filteredCoffees.push(coffee);
         }
     });
-    tbody.innerHTML = renderCoffees(filteredCoffees);
+    bfbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
 function inputCoffee(e) {
@@ -57,7 +55,7 @@ function inputCoffee(e) {
     } else if (newCoffee.roast === 'medium'){
         coffees.splice(4, 0, newCoffee)
     }
-    tbody.innerHTML = renderCoffees(coffees);
+    bfbody.innerHTML = renderCoffees(coffees);
 }
 
 
@@ -96,3 +94,56 @@ myInput.addEventListener('keyup', filterCoffees);
 userCoffee.addEventListener('click', inputCoffee);
 
 
+
+
+
+//Breakfast items
+
+function renderBreakfast(breakfast) {
+    var html = '<div class="breakfast col-6 py-2">';
+    html += '<h3>' + breakfast.name + '<span>' + ' ' + ' ' + breakfast.description +
+        '</span>' + '</h3>';
+    html += '</div>';
+
+    return html;
+}
+
+function renderBreakfasts(breakfast) {
+    var html = '';
+    for(var i = 0; i <= breakfast.length - 1; i++) {
+        html += renderBreakfast(breakfast[i]);
+    }
+    return html;
+}
+
+var breakfast = [
+    {id: 1, name: 'Breakfast Tacos', description: 'Bacon & Egg, Potato & Egg, Bean & Cheese'},
+    {id: 2, name: 'Omelette', description: 'Veggie, Bacon and Cheese, Make Your Own'},
+    {id: 3, name: 'Breakfast Croissant', description: 'Egg and Your Choice of Meat'},
+    {id: 4, name: 'Bagels', description: 'Plain, Everything, Blueberry, Asiago, Onion, Cheddar, Chocolate Chip, Whole Wheat, Cinnamon Raisin'},
+    {id: 5, name: 'Pastries', description: 'Fruit Tarts, Croissants'},
+    // {id: 6, name: 'Breakfast', description: 'medium'},
+    // {id: 7, name: 'High', description: 'dark'},
+    // {id: 8, name: 'Continental', description: 'dark'},
+    // {id: 9, name: 'New Orleans', description: 'dark'},
+    // {id: 10, name: 'European', description: 'dark'},
+    // {id: 11, name: 'Espresso', description: 'dark'},
+    // {id: 12, name: 'Viennese', description: 'dark'},
+    // {id: 13, name: 'Italian', description: 'dark'},
+    // {id: 14, name: 'French', description: 'dark'}
+];
+
+var bfbody = document.querySelector('#breakfast');
+// var submitButton = document.querySelector('#submit');
+// var roastSelection = document.querySelector('#roast-selection');
+//
+// var myInput = document.querySelector("#myInput");
+//
+// var userInput = document.querySelector('#userInput');
+// var userRoastSelection = document.querySelector('#user-roast-selection');
+// var userCoffee = document.querySelector('#userSubmit');
+
+bfbody.innerHTML = renderBreakfasts(breakfast);
+
+// submitButton.addEventListener('click', updateBreakfasts);
+// myInput.addEventListener('keyup', filterBreakfasts);
