@@ -109,10 +109,15 @@ tbody#coffees {
 
 footer {
     height: 100px; width: 100%; font-family: 'Josefin Sans', sans-serif; font-size: 18px; color: #DAC39D;
+    background: url("footer.jpg");
+    background-size: cover;
 }
+
 
 .footer-container {
     margin: 0 auto;
+    background: url("footer.jpg");
+
 }
 
 .footer-links {
