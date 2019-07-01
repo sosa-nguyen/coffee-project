@@ -107,3 +107,38 @@ tbody#coffees {
     background: white;
 }
 
+footer {
+    height: 100px; width: 100%; font-family: 'Josefin Sans', sans-serif; font-size: 18px; color: #DAC39D;
+}
+
+.footer-container {
+    margin: 0 auto;
+}
+
+.footer-links {
+    color: #DAC39D;
+    text-decoration: underline;
+}
+
+.footer-links:hover {
+    color: #DAC39D;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 5px 0;
+}
+
+li img {
+    height: 35px;
+    width: auto;
+}
+
+#map {
+    height: 250px;
+    width: 100%;
+}
