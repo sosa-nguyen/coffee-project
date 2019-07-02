@@ -6,17 +6,6 @@ body {
     background-attachment: fixed;
 }
 
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
-    table-layout:fixed;
-}
-
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
-}
-
 .n-color {
     text-shadow: 2px 2px #3F1003;
     color: white !important;
@@ -81,10 +70,12 @@ tbody#coffees {
 
 #roast-selection {
     width: 99%;
+    background-color: white;
 }
 
 #user-roast-selection {
     width: 99%;
+    background-color: white;
 }
 
 .search {
