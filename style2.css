@@ -7,7 +7,6 @@ body {
 }
 
 .n-color {
-    text-shadow: 2px 2px #3F1003;
     color: white !important;
 }
 
@@ -128,6 +127,10 @@ ul {
 
 li {
     padding: 5px 0;
+}
+
+.liShadow {
+    text-shadow: 2px 2px #3F1003;
 }
 
 li img {
