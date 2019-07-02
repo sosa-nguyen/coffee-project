@@ -26,7 +26,7 @@ function filterCoffees(e) {
             filteredCoffees.push(coffee);
         }
     });
-    bfbody.innerHTML = renderCoffees(filteredCoffees)
+    tbody.innerHTML = renderCoffees(filteredCoffees)
 }
 
 function updateCoffees(e) {
@@ -40,7 +40,7 @@ function updateCoffees(e) {
             filteredCoffees.push(coffee);
         }
     });
-    bfbody.innerHTML = renderCoffees(filteredCoffees);
+    tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
 function inputCoffee(e) {
@@ -55,7 +55,7 @@ function inputCoffee(e) {
     } else if (newCoffee.roast === 'medium'){
         coffees.splice(4, 0, newCoffee)
     }
-    bfbody.innerHTML = renderCoffees(coffees);
+    tbody.innerHTML = renderCoffees(coffees);
 }
 
 
