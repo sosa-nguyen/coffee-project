@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    background-image: url("cofeebg.jpg");
+    background-image: url("coffeebg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -73,6 +73,7 @@ tbody#coffees {
     background-color: white;
 }
 
+
 #user-roast-selection {
     width: 99%;
     background-color: white;
@@ -92,7 +93,7 @@ tbody#coffees {
 }
 #content{
     height: 600px;
-    padding-left: 80px;
+    padding-left: 100px;
 }
 #content2{
     background: white;
@@ -152,4 +153,8 @@ li img {
     padding: 20px;
     width: 200px;
     height: 250px;
+}
+midbar{
+    background-image: url("midbar.jpg");
+    height: 344px;
 }
