@@ -134,16 +134,5 @@ var breakfast = [
 ];
 
 var bfbody = document.querySelector('#breakfast');
-// var submitButton = document.querySelector('#submit');
-// var roastSelection = document.querySelector('#roast-selection');
-//
-// var myInput = document.querySelector("#myInput");
-//
-// var userInput = document.querySelector('#userInput');
-// var userRoastSelection = document.querySelector('#user-roast-selection');
-// var userCoffee = document.querySelector('#userSubmit');
 
 bfbody.innerHTML = renderBreakfasts(breakfast);
-
-// submitButton.addEventListener('click', updateBreakfasts);
-// myInput.addEventListener('keyup', filterBreakfasts);
