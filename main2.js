@@ -121,7 +121,7 @@ var breakfast = [
     {id: 2, name: 'Omelette', description: 'Veggie, Bacon and Cheese, Make Your Own'},
     {id: 3, name: 'Breakfast Croissant', description: 'Egg and Your Choice of Meat'},
     {id: 4, name: 'Bagels', description: 'Plain, Everything, Blueberry, Asiago, Onion, Cheddar, Chocolate Chip, Whole Wheat, Cinnamon Raisin'},
-    {id: 5, name: 'Pastries', description: 'Fruit Tarts, Croissants'},
+    {id: 5, name: 'Pastries', description: 'Fruit Tarts, Croissants'}
     // {id: 6, name: 'Breakfast', description: 'medium'},
     // {id: 7, name: 'High', description: 'dark'},
     // {id: 8, name: 'Continental', description: 'dark'},
